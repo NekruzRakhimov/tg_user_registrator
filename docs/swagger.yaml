@@ -1,0 +1,54 @@
+basePath: /
+definitions:
+  models.PingPong:
+    properties:
+      ping:
+        type: string
+    type: object
+host: localhost:5555
+info:
+  contact:
+    email: nekruzrakhimov@icloud.com
+    name: API Support
+    url: http://www.swagger.io/support
+  description: Проверка несудимости.
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+  termsOfService: http://swagger.io/terms/
+  title: Gin Swagger Unconvicted Api
+  version: "1.0"
+paths:
+  /ping:
+    get:
+      consumes:
+      - application/json
+      description: Роут для проверки работы сервера
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/models.PingPong'
+        "400":
+          description: Bad Request
+          schema:
+            additionalProperties: true
+            type: object
+        "404":
+          description: Not Found
+          schema:
+            additionalProperties: true
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            additionalProperties: true
+            type: object
+      summary: unconvicted
+      tags:
+      - url
+schemes:
+- http
+swagger: "2.0"

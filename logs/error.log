@@ -1,0 +1,4 @@
+2022/11/25 01:56:53.952065 [github.com/NekruzRakhimov/unconvicted/pkg/controller.getUserID] Error is: user id not found
+2022/11/25 01:57:39.696733 [github.com/NekruzRakhimov/unconvicted/pkg/controller.getUserID] Error is: user id not found
+2022/11/25 03:11:34.150960 [github.com/NekruzRakhimov/unconvicted/pkg/repository.GetAllReferences] Error is: ERROR: OFFSET must not be negative (SQLSTATE 2201X)
+2022/11/25 04:09:26.938919 [github.com/NekruzRakhimov/unconvicted/pkg/repository.GetUserByID] Error is: write failed: write tcp 172.20.10.2:64024->54.147.36.107:5432: write: broken pipe
